@@ -1,6 +1,6 @@
-// TODO: move keys to .env
+require("dotenv").config();
+
 module.exports = {
-  mongoURI:
-    "mongodb+srv://gastonyelmini:38150144g@cluster0-n9gon.mongodb.net/test?retryWrites=true",
-  secretOrKey: "secret"
+  mongoURI: process.env.MONGODB_URI,
+  secretOrKey: process.env.SECRET_OR_KEY
 };
